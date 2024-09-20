@@ -4,22 +4,92 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Brown', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'Brown';
+    src: url(/Assets/Fonts/Brown-Regular.eot);
+    src: local('Brown-Regular'),
+        url(/Assets/Fonts/Brown-Regular.eot) format('embedded-opentype'),
+        url(/Assets/Fonts/Brown-Regular.woff2) format('woff2'),
+        url(/Assets/Fonts/Brown-Regular.woff) format('woff'),
+        url(/Assets/Fonts/Brown-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url(/Assets/Fonts/Brown-Light.eot);
+    src: local('Brown-Light'),
+        url(/Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
+        url(/Assets/Fonts/Brown-Light.woff2) format('woff2'),
+        url(/Assets/Fonts/Brown-Light.woff) format('woff'),
+        url(/Assets/Fonts/Brown-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url(/Assets/Fonts/Brown-Bold.eot);
+    src: local('Brown-Bold'),
+        url(/Assets/Fonts/Brown-Bold.eot) format('embedded-opentype'),
+        url(/Assets/Fonts/Brown-Bold.woff2) format('woff2'),
+        url(/Assets/Fonts/Brown-Bold.woff) format('woff'),
+        url(/Assets/Fonts/Brown-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 :root {
     --background-color: #f7fdfc;
     --button-color: #2ec4b6;
+    --white-color: #ffffff;
+    --p-color: #737373;
   }
   
-/* header {
+body {
+    background-color: var(--background-color);
+    padding-inline: 1.2rem;
+    padding-block: 4rem;
+}
+
+header .logo {
+  padding-block-end: 1rem;
+}
+
+.text-div h1 {
+  padding-block-end: .5rem;
+  font-weight: bold;
+}
+
+.text-div p {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+header .logo img {
+    background-size: contain;
+    height: 40px;
+    width: auto;
+}
+
+header {
     border: 1px solid red;
-} */
+}
+
+header h1 {
+    font-weight: 900;
+}
 
 .form-container {
     max-width: 100%; /* Make the form container fill the screen width on mobile */
     margin: 0 auto;
-    padding: 15px;
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
