@@ -86,13 +86,14 @@ header .text-div p {
 
 /* ******************************FORM STYLING**************************** */
 .form-container {
-    max-width: 100%; /* Make the form container fill the screen width on mobile */
+     /* Make the form container fill the screen width on mobile */
     margin: 0 auto;
     background: var(--white-color);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 29px -15px rgba(0,0,0,0.20);
     padding-block: 1.3rem;
     padding-inline: 1.1rem;
+    border: 1px solid green;
   }
   
   form {
@@ -134,10 +135,41 @@ header .text-div p {
   button:hover {
     background-color: var(--button-on-hover);
   }
+
+  .by-clicking {
+    margin: 0 auto;
+    max-width: 100%;
+    border: 1px solid blue;
+  }
+
+  .by-clicking p {
+    font-size: 1rem;
+    padding-block: 1.2rem;
+    padding-inline: .8rem;
+  }
   
+  .by-clicking p a {
+    color: var(--button-color);
+    font-weight: 300;
+  }
   /* Media Queries for Larger Screens */
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1400px) {
+    body {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
     .form-container {
-      max-width: 400px; /* Set a max-width for larger screens */
+      width: 60%;
+    }
+
+    .by-clicking {
+      display: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column; /* Stack form elements vertically */
     }
   }
