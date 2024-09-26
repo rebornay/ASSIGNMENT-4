@@ -1,10 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    /* text-decoration: none; */
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Brown', Arial, sans-serif;
+    font-family: 'Brown', sans-serif;
 }
 @font-face {
     font-family: 'Brown';
@@ -171,7 +170,7 @@ header .text-div p {
 
 
   /* Media Queries for Larger Screens */
-  @media (min-width: 768px) and (max-width: 1400px) {
+  @media (min-width: 768px) and (max-width: 1600px) {
     body {
       display: flex;
       align-items: flex-start;
