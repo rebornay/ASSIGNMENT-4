@@ -1,62 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* text-decoration: none; */
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Brown', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none; */
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Brown", Arial, sans-serif;
 }
 @font-face {
-    font-family: 'Brown';
-    src: url(./Assets/Fonts/Brown-Light.eot);
-    src: local('Brown-Light'),
-        url(./Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
-        url(./Assets/Fonts/Brown-Light.woff2) format('woff2'),
-        url(./Assets/Fonts/Brown-Light.woff) format('woff'),
-        url(./Assets/Fonts/Brown-Light.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url(./Assets/Fonts/Brown-Light.eot);
-    src: local('Brown-Light'),
-        url(./Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
-        url(./Assets/Fonts/Brown-Light.woff2) format('woff2'),
-        url(./Assets/Fonts/Brown-Light.woff) format('woff'),
-        url(./Assets/Fonts/Brown-Light.ttf) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Brown";
+  src: url(./Assets/Fonts/Brown-Light.eot);
+  src: local("Brown-Light"), url(./Assets) format("embedded-opentype"),
+    url(./Assets/Fonts/Brown-Light.woff2) format("woff2"),
+    url(./Assets/Fonts/Brown-Light.woff) format("woff"),
+    url(./Assets/Fonts/Brown-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Brown';
-    src: url(./Assets/Fonts/Brown-Bold.eot);
-    src: local('Brown-Bold'),
-        url(./Assets/Fonts/Brown-Bold.eot) format('embedded-opentype'),
-        url(./Assets/Fonts/Brown-Bold.woff2) format('woff2'),
-        url(./Assets/Fonts/Brown-Bold.woff) format('woff'),
-        url(./Assets/Fonts/Brown-Bold.ttf) format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Brown";
+  src: url(./Assets/Fonts/Brown-Light.eot);
+  src: local("Brown-Light"),
+    url(./Assets/Fonts/Brown-Light.eot) format("embedded-opentype"),
+    url(./Assets/Fonts/Brown-Light.woff2) format("woff2"),
+    url(./Assets/Fonts/Brown-Light.woff) format("woff"),
+    url(./Assets/Fonts/Brown-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url(./Assets/Fonts/Brown-Bold.eot);
+  src: local("Brown-Bold"),
+    url(./Assets/Fonts/Brown-Bold.eot) format("embedded-opentype"),
+    url(./Assets/Fonts/Brown-Bold.woff2) format("woff2"),
+    url(./Assets/Fonts/Brown-Bold.woff) format("woff"),
+    url(./Assets/Fonts/Brown-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
-    --background-color: #f7fdfc;
-    --button-color: rgb(46, 196, 182);
-    --button-on-hover: #259e98;
-    --white-color: #ffffff;
-    --p-color: #737373;
-  }
-  
+  --background-color: #f7fdfc;
+  --button-color: rgb(46, 196, 182);
+  --button-on-hover: #259e98;
+  --white-color: #ffffff;
+  --p-color: #737373;
+}
+
 body {
-    background-color: var(--background-color);
-    padding-inline: 1.2rem;
-    padding-block: 4rem;
+  background-color: var(--background-color);
+  padding-inline: 1.2rem;
+  padding-block: 4rem;
 }
 /* ******************************HEADER STYLING**************************** */
 header .logo {
@@ -72,11 +71,11 @@ header .logo img {
   height: 40px;
   /* width: auto; */
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header .text-div h1 {
-  padding-block-end: .5rem;
+  padding-block-end: 0.5rem;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -88,140 +87,141 @@ header .text-div p {
 
 /* ******************************FORM STYLING**************************** */
 .form-container {
-     /* Make the form container fill the screen width on mobile */
-    margin: 0 auto;
-    background: var(--white-color);
-    border-radius: 8px;
-    box-shadow: -2px 6px 29px -15px rgba(0,0,0,0.20);
-    padding-block: 1.3rem;
-    padding-inline: 1.1rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-  }
-  
-  label {
-    margin-block-end: 8px;
-    font-size: 1rem;
-    font-family: 'Brown';
-    font-weight: bold;
-    display: inline-table;
-  }
-
-  input,
-  textarea, select {
-    width: 100%;
-    padding: .8rem;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-  }
-
-  input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="email"]:focus,  select:focus, textarea:focus {
-    border-color: var(--button-color); 
-    box-shadow: 0 0 5px rgba(46, 196, 182, 0.5);
+  /* Make the form container fill the screen width on mobile */
+  margin: 0 auto;
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: -2px 6px 29px -15px rgba(0, 0, 0, 0.2);
+  padding-block: 1.3rem;
+  padding-inline: 1.1rem;
 }
-  
-  textarea {
-    resize: vertical; /* Allow vertical resizing of the textarea */
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+  margin-block-end: 8px;
+  font-size: 1rem;
+  font-family: "Brown";
+  font-weight: bold;
+  display: inline-table;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--button-color);
+  box-shadow: 0 0 5px rgba(46, 196, 182, 0.5);
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-on-hover);
+}
+
+.by-clicking {
+  margin: 0 auto;
+  max-width: 100%;
+  /* border: 1px solid blue; */
+}
+
+.by-clicking p {
+  font-size: 1rem;
+  padding-block: 1.2rem;
+  padding-inline: 0.8rem;
+}
+
+.by-clicking p a {
+  color: var(--button-color);
+  font-weight: 300;
+}
+
+/* Media Queries for Smaller Screens */
+@media (min-width: 200px) and (max-width: 768px) {
+  .by-click {
+    display: none;
   }
-  
-  button {
-    padding: 1rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) and (max-width: 1600px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-inline: 3rem;
   }
-  
-  button:hover {
-    background-color: var(--button-on-hover);
+
+  header {
+    margin-block-start: 8rem;
+  }
+
+  .form-container {
+    width: 60%;
+    padding: 4rem;
   }
 
   .by-clicking {
-    margin: 0 auto;
-    max-width: 100%;
-    /* border: 1px solid blue; */
+    display: none;
   }
 
-  .by-clicking p {
-    font-size: 1rem;
-    padding-block: 1.2rem;
-    padding-inline: .8rem;
-  }
-  
-  .by-clicking p a {
-    color: var(--button-color);
-    font-weight: 300;
-  }
-
-
-  /* Media Queries for Smaller Screens */
-  @media (min-width: 200px) and (max-width: 768px) {
-    .by-click {
-      display: none;
-    }
-  }
-
-
-  /* Media Queries for Larger Screens */
-  @media (min-width: 768px) and (max-width: 1400px) {
-    body {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding-inline: 3rem;
-    }
-
-    header {
-      margin-block-start: 8rem;
-    }
-
-    .form-container {
-      width: 80%;
-    }
-
-    .by-clicking {
-      display: none;
-    }
-
-   .fln {
+  .fln {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-   }
+    justify-content: center;
+    gap: 10rem;
+  }
 
-   .firstn{
-    padding-inline-end: 1rem;
-   }
-   .by-click {
+  .firstn {
+    width: 300px;
+  }
+  .lastn {
+    width: 300px;
+  }
+  .by-click {
     margin: 0 auto;
     max-width: 100%;
     /* border: 1px solid blue; */
   }
 
   .by-click p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding-block: 1.2rem;
-    padding-inline: .8rem;
+    padding-inline: 0.8rem;
   }
-  
+
   .by-click p a {
     color: var(--button-color);
     font-weight: 300;
   }
-
-   }
-
-
-
-
-
-
-   
+}
