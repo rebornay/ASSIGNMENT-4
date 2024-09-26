@@ -174,7 +174,7 @@ button:hover {
 }
 
 /* Media Queries for Larger Screens */
-@media (min-width: 768px) and (max-width: 1600px) {
+@media (min-width: 768px) and (max-width: 2000px) {
   body {
     display: flex;
     align-items: flex-start;
@@ -184,11 +184,12 @@ button:hover {
 
   header {
     margin-block-start: 8rem;
+    margin-inline-end: 2rem;
   }
 
   .form-container {
     width: 60%;
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .by-clicking {
@@ -199,15 +200,13 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 1.3rem;
   }
 
-  .firstn {
-    width: 300px;
+  .firstn, .lastn {
+    width: 18.75rem;
   }
-  .lastn {
-    width: 300px;
-  }
+
   .by-click {
     margin: 0 auto;
     max-width: 100%;
@@ -215,7 +214,7 @@ button:hover {
   }
 
   .by-click p {
-    font-size: 0.9rem;
+    font-size: 0.87rem;
     padding-block: 1.2rem;
     padding-inline: 0.8rem;
   }
