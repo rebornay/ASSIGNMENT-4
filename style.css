@@ -68,9 +68,9 @@ header {
 }
 
 header .logo img {
-  background-size: contain;
+  /* background-size: contain; */
   height: 40px;
-  width: auto;
+  /* width: auto; */
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
@@ -176,6 +176,7 @@ header .text-div p {
       display: flex;
       align-items: flex-start;
       justify-content: center;
+      padding-inline: 3rem;
     }
 
     header {
