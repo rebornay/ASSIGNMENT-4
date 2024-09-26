@@ -8,12 +8,12 @@
 }
 @font-face {
     font-family: 'Brown';
-    src: url(/Assets/Fonts/Brown-Regular.eot);
-    src: local('Brown-Regular'),
-        url(/Assets/Fonts/Brown-Regular.eot) format('embedded-opentype'),
-        url(/Assets/Fonts/Brown-Regular.woff2) format('woff2'),
-        url(/Assets/Fonts/Brown-Regular.woff) format('woff'),
-        url(/Assets/Fonts/Brown-Regular.ttf) format('truetype');
+    src: url(./Assets/Fonts/Brown-Light.eot);
+    src: local('Brown-Light'),
+        url(./Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
+        url(./Assets/Fonts/Brown-Light.woff2) format('woff2'),
+        url(./Assets/Fonts/Brown-Light.woff) format('woff'),
+        url(./Assets/Fonts/Brown-Light.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -21,12 +21,12 @@
 
 @font-face {
     font-family: 'Brown';
-    src: url(/Assets/Fonts/Brown-Light.eot);
+    src: url(./Assets/Fonts/Brown-Light.eot);
     src: local('Brown-Light'),
-        url(/Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
-        url(/Assets/Fonts/Brown-Light.woff2) format('woff2'),
-        url(/Assets/Fonts/Brown-Light.woff) format('woff'),
-        url(/Assets/Fonts/Brown-Light.ttf) format('truetype');
+        url(./Assets/Fonts/Brown-Light.eot) format('embedded-opentype'),
+        url(./Assets/Fonts/Brown-Light.woff2) format('woff2'),
+        url(./Assets/Fonts/Brown-Light.woff) format('woff'),
+        url(./Assets/Fonts/Brown-Light.ttf) format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -34,12 +34,12 @@
 
 @font-face {
     font-family: 'Brown';
-    src: url(/Assets/Fonts/Brown-Bold.eot);
+    src: url(./Assets/Fonts/Brown-Bold.eot);
     src: local('Brown-Bold'),
-        url(/Assets/Fonts/Brown-Bold.eot) format('embedded-opentype'),
-        url(/Assets/Fonts/Brown-Bold.woff2) format('woff2'),
-        url(/Assets/Fonts/Brown-Bold.woff) format('woff'),
-        url(/Assets/Fonts/Brown-Bold.ttf) format('truetype');
+        url(./Assets/Fonts/Brown-Bold.eot) format('embedded-opentype'),
+        url(./Assets/Fonts/Brown-Bold.woff2) format('woff2'),
+        url(./Assets/Fonts/Brown-Bold.woff) format('woff'),
+        url(./Assets/Fonts/Brown-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -218,4 +218,10 @@ header .text-div p {
   }
 
    }
+
+
+
+
+
+
    
