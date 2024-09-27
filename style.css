@@ -119,6 +119,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+  background-color: #ffffff;
 }
 /* ***********************STYLING GLOW FOR ONFOCUS *****************/
 input[type="text"]:focus,
